@@ -1,0 +1,13 @@
+Mango DB
+
+docker ps   (verify the running container)
+docker pull mongo
+docker run -d -p 27017:27017 --name shopping-mongo mongo
+docker logs -f shopping-mongo
+docker exec -it shopping-mongo mongo [docker exec -it shopping-mongo /bin/bash]
+
+show dbs
+use catalogDb
+db.createCollection('Products')
+
++		InnerException	{"'{' is an invalid start of a property name. Expected a '\"'. LineNumber: 1 | BytePositionInLine: 2."}	System.Exception {System.Text.Json.JsonReaderException}

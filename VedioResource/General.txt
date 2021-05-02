@@ -1,0 +1,6 @@
+1. There is option==>docker in VS to setup not to build images on solution build/rebuild otherwise while you clean/build/rebuild then it start creating images. For this setup option in VS.
+
+2. You can debug code in VS simply as we did. for catalog api, when u presee F5 you may face timeout issue because when u run in local env using docker then it try to connect mongo db from appsetting configure whereas in docker database with other name. So configure appsetting.develop file using name which u define for container.
+
+3. Setup port for api to run IISexprese profile and docker. For ex for catalog service iisexpress port is 5000 and docker port is 80.
+
